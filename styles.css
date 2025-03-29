@@ -194,17 +194,94 @@ body {
 }
 
 @media (max-width: 750px) {
+    body {
+        padding: 1rem;
+    }
+
     .top-container {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         gap: 2rem;
+        margin-bottom: 2rem;
     }
 
     .question {
-        width: 40%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .is-it, .or-not {
+        text-align: justify;
+        text-align-last: justify;
+        height: auto;
+        margin-bottom: 0.5rem;
     }
 
     .description {
+        width: 100%;
+        height: auto;
+        text-align: center;
         font-size: 0.875rem;
+        line-height: 1.5;
+    }
+
+    .top-text, .bottom-text {
+        text-align: justify;
+        text-align-last: justify;
+        margin-bottom: 1.5rem;
+    }
+
+    .justified-text {
+        text-align: justify;
+        text-align-last: justify;
+    }
+
+    .bottom-container {
+        margin-top: auto;
+        position: relative;
+        height: 60vh;
+    }
+
+    .gray-box {
+        width: 80vw;
+        height: 80vw;
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+    }
+
+    .perfect-piece {
+        font-size: clamp(15rem, 60vw, 30rem);
+        width: 100%;
+        left: 0;
+        letter-spacing: -0.05em;
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        transform: none;
+    }
+
+    .dropdown {
+        position: fixed;
+        left: 50% !important;
+        right: auto !important;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        width: 80vw;
+        max-width: 300px;
+        text-align: center;
+        text-align-last: center;
+    }
+
+    .option {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    br {
+        display: none;
     }
 }
