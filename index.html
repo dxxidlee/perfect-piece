@@ -29,19 +29,17 @@
                                 <div class="option">OCHRE</div>
                                 <div class="option">VIRIDIAN</div>
                             </div>
-                        </div>, <div class="hover-button"><span>(02)DEPTH</span>
+                        </div>, <div class="hover-button"><span>(02)EMOTION</span>
+                            <div class="emotion-slider">
+                                <input type="range" min="0" max="4" step="1" value="2">
+                                <div class="emotion-value">EMOTION</div>
+                            </div>
+                        </div>, AND <div class="hover-button"><span>(03)DEPTH</span>
                             <div class="dropdown">
                                 <div class="option">ABYSS</div>
                                 <div class="option">CHASM</div>
                                 <div class="option">GRADIENT</div>
                                 <div class="option">OBSCURITY</div>
-                            </div>
-                        </div>, AND <div class="hover-button"><span>(03)EMOTION</span>
-                            <div class="dropdown">
-                                <div class="option">MELANCHOLY</div>
-                                <div class="option">EUPHORIA</div>
-                                <div class="option">LONGING</div>
-                                <div class="option">REVERENCE</div>
                             </div>
                         </div>
                     </div>
@@ -57,5 +55,18 @@
             <div class="perfect-piece">PERFECT PIECE</div>
             <div class="gray-box"></div>
         </div>
+
+        <!-- Custom Modal -->
+        <div class="modal" id="exitModal">
+            <div class="modal-content">
+                <p>A machine can't even create a perfect piece how can we?</p>
+                <div class="modal-buttons">
+                    <button class="modal-button stay">Stay</button>
+                    <button class="modal-button leave">Leave</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
