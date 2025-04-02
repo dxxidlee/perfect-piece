@@ -81,6 +81,14 @@ body {
     height: clamp(3rem, 6vw, 5rem);
 }
 
+.is-it{
+    margin-top: -0.3rem;
+}
+
+.or-not{
+    margin-top: 0.75rem;
+}
+
 .description {
     font-family: 'monument';
     font-size: clamp(0.75rem, 1vw, 1rem);
@@ -153,12 +161,14 @@ body {
 }
 
 .hover-button {
+    line-height: 12px;
     position: relative;
     display: inline-block;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
     font-family: 'monument-bold';
     font-weight: 900;
+    text-decoration: underline;
 }
 
 .hover-button span {
@@ -246,7 +256,7 @@ body {
 
 .emotion-value {
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'monument';
